@@ -55,9 +55,9 @@ TRACK C: YOUR OWN IDEA
 =============================== PLAN FIRST ====================================
 Before you write code, fill this in (it will keep you honest all week):
 
-  MY PROJECT: (one sentence)
-  THE PIECES I NEED TO BUILD: (list 3-6 functions or parts)
-  WHAT I WILL DEMO AT SHOWCASE: (the 60-second version)
+  MY PROJECT: For my project, I will be building a simulation of a hospital and a patient, where the player, or the doctor, is required to make decisions to cure their patient.
+  THE PIECES I NEED TO BUILD: I will need to use print statements, if, else, elif loops, and input statements.
+  WHAT I WILL DEMO AT SHOWCASE: Give the audience a chance to play the game themselves.
 
 ==============================================================================
 Build your project below (and split it into more .py files if it gets big;

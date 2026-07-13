@@ -1,9 +1,7 @@
 # Project Title (REPLACE THIS with your project's name)
 
 ## What it is
-REPLACE THIS: 2-4 sentences a stranger could understand. What does your program
-do? What makes it cool? This is the paragraph you would put on a resume or in a
-college application, so write it like you're proud of it.
+My code simulates a medical situation, when the patient is faced under the underlying condition of pulmonary embolism. The game forces the player to act as the "doctor", and make critical thinking decisions to keep the patient alive and healthy.
 
 ## How to run it
 REPLACE THIS: exact steps. For example: "Run python final_project.py in the
