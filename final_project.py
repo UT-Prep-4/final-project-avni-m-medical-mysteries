@@ -64,4 +64,50 @@ Build your project below (and split it into more .py files if it gets big;
 the grader reads all of them). Delete this line and start!
 '''
 
-print("My final project is not built yet!")
+
+
+
+print("A patient walks into your hospital, with complaints of hyperentilation and chest pain. You have three choices.")
+print("Option 1: check their vitals through a heart moniter, blood pressure, and heart rythm.")
+print("Option 2: calm the patient down, because they are showing signs of a panic attack")
+print("Option 3: Recieve medical history before operating on the patient")
+choice1 =input("Option 1, Option 2, or Option 3?")
+
+
+print() 
+
+if choice1=="1":
+  print("Vitals show blood pressure of 110/70, heart rate 125, oxygen levels of 84%.")
+  choice1a =input("Either choose to (a1) prepare an ultrasound and emergency medications, or (b1) send the patient back to the waiting room since their condition isn't bad")
+  if choice1a=="a1":
+    print("You find a strain in the heart, comfirming pulmonary embolism, but blood pressure remains normal.")
+    choice2a=input("Next, choose to (c1) use blood thinner to stabilize, or (d1) wait a few minutes for vital sign changes.")
+  elif choice1a=="b1": 
+    print("You failed to save the patient! They had an underlying condition called pulmonary embolism, and without intensive treatment, they suffered fron cardiac arrest")
+
+   
+if choice1=="2":
+  print("Patient slows breathing, but oxygen levels plummet")
+  choice1b =input("Choose to (a2) flood the system with oxygen, (b2) turn off the monitor since stats are incorrect, or (c1) Give anxiety medication")
+  if choice1b=="a2":
+    print("Patient stabilizes! However, you see that one leg is swollen.")
+    choice2a =input("Either choose to (e1) treat the leg by icing it, or (f1) push a heavy dose of IV blood thinners")
+  if choice1b=="b2":
+    print("You failed to save the patient! They had an underlying condition called pulmonary embolism, and without intensive treatment, they suffered fron cardiac arrest")
+  elif choice1b=="c2":
+    print("The patient collapses due to respiratory faliure and cardiovascular collapse.")
+    choice2b =input("Choose to either (1g) provide the drug's anitdote to stop its effects, or (1h) provide IV for the patient.")
+
+
+elif choice1=="3":
+  choice1c =input("Next, choose to (a3) ask specific quetsions to find an underlying condition, or (b3) run a physical on the patient.")
+  if choice1c=="a3":
+    print("You find out that the patient has a previous history of anxiety.")
+    choice3a=input("Either choose to (1gh) give anxiety meds to calm down the patient, or (1hg) check their vitals.")
+  elif choice1c=="b3":
+    print("You notice one of the patient's legs are swollen.")
+    choice3b=input("Either (1i) treat the leg with ice or (1j) push a heavy dose of IV blood thinners.")
+
+  
+
+
