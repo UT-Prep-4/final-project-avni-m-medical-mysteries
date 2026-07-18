@@ -75,20 +75,34 @@ choice1 =input("Option 1, Option 2, or Option 3?")
 
 
 print() 
-
+'''
+basic vitals path (1)
+'''
 if choice1=="1":
   print("Vitals show blood pressure of 110/70, heart rate 125, oxygen levels of 84%.")
   choice1a =input("Either choose to (a1) prepare an ultrasound and emergency medications, or (b1) send the patient back to the waiting room since their condition isn't bad")
   if choice1a=="a1":
     print("You find a strain in the heart, comfirming pulmonary embolism, but blood pressure remains normal.")
     choice2a=input("Next, choose to (c1) use blood thinner to stabilize, or (d1) wait a few minutes for vital sign changes.")
-    if choice2a=="1d":
+    if choice2a=="d1":
       print("Patient suddenly crashes and loses consciousness. Blood pressure levels drop to 70/40. To help, you grab Clot-Busters. The Clot-Busters attacks the clot, and slices through fibrin web, breaking the clottage down.")
       choice6a=input("After using the clot-busters, you can chose to (1aa) perform neuro checks since the brain could be prone to bleeding, or (1ab) discharge the patient since they seem alright and your job is done.")
       if choice6a=="1aa": 
         print("After a few days, you discharge the patient. You succesfully saved them!")
       if choice6a=="1ab": 
         print("The patient suffered from brain bleeding. You failed to save them.")
+    if choice2a=="c1":
+          print("Vitals don't snap back to normal but they do stabilize. Patient still feels sharp pain in chest.")
+          choice4a=input("Either choose to (1k) keep monitoring patient by getting a heart ultrasound, bed rest, and checking for brain bleed, or (1l) discharge the pateint since they are stable.")
+          if choice4a=="1k":
+            print("You save the patient! By monitoring them and discharging after a week, you made sure they were fully okay. Make sure to tell them to follow up with a hermatologist!")
+          elif choice4a=="1l":
+            print("The patient collapses at home due to buildup from a blood clot. They enter obstructive shock.")
+            choice5a=input("Either choose to (1z) enter code blue, or (1x) scan for a chest x-ray to see exactly what's wrong.")
+            if choice5a=="1z":
+             print("You succesfully saved the patient.")
+            elif choice5a=="1x":
+              print("You wasted too much time. You failed to save the patient!")
 
   elif choice1a=="b1": 
     print("You failed to save the patient! They had an underlying condition called pulmonary embolism, and without intensive treatment, they suffered fron cardiac arrest")
@@ -100,23 +114,21 @@ if choice1=="2":
   choice1b =input("Choose to (a2) flood the system with oxygen, (b2) turn off the monitor since stats are incorrect, or (c1) Give anxiety medication")
   if choice1b=="a2":
     print("Patient stabilizes! However, you see that one leg is swollen.")
-  choice6a=input("Either (1i) treat the leg with ice or (1j) push a heavy dose of IV blood thinners.")
-  if choice6a=="1i":
-    print("Patient suffers from cardiovascular collapse. You failed. Rule of thumb: treat in order of airway, breathing, circultation.")
-  elif choice6a=="1j":
-    print("Vitals don't snap back to normal but they do stabilize. Patient still feels sharp pain in chest.")
-    choice4a=input("Either choose to (1k) keep monitoring patient by getting a heart ultrasound, bed rest, and checking for brain bleed or (1l) discharge the pateint since they are stable.")
-    if choice4a=="1k":
-      print("You save the patient! By monitoring them and discharging after a week, you made sure they were fully okay. Make sure to tell them to follow up with a hermatologist!")
-    if choice4a=="1l":
-      print("The patient collapses at home due to buildup from a blood clot. They enter obstructive shock.")
-      choice5a=input("Either choose to (1z) enter code blue, or (1x) scan for a chest x-ray to see exactly what's wrong.")
-      if choice5a=="1z":
-       print("You succesfully saved the patient.")
-      if choice5a=="1x":
+    choice6a=input("Either (1i) treat the leg with ice or (1j) push a heavy dose of IV blood thinners.")
+    if choice6a=="1i":
+      print("Patient suffers from cardiovascular collapse. You failed. Rule of thumb: treat in order of airway, breathing, circultation.")
+    elif choice6a=="1j":
+      print("Vitals don't snap back to normal but they do stabilize. Patient still feels sharp pain in chest.")
+      choice4a=input("Either choose to (1k) keep monitoring patient by getting a heart ultrasound, bed rest, and checking for brain bleed or (1l) discharge the pateint since they are stable.")
+      if choice4a=="1k":
+        print("You save the patient! By monitoring them and discharging after a week, you made sure they were fully okay. Make sure to tell them to follow up with a hermatologist!")
+      elif choice4a=="1l":
+        print("The patient collapses at home due to buildup from a blood clot. They enter obstructive shock.")
+        choice5a=input("Either choose to (1z) enter code blue, or (1x) scan for a chest x-ray to see exactly what's wrong.")
+        if choice5a=="1z":
+          print("You succesfully saved the patient.")
+        elif choice5a=="1x":
          print("You wasted too much time. You failed to save the patient!")
-
-
   if choice1b=="b2":
     print("You failed to save the patient! They had an underlying condition called pulmonary embolism, and without intensive treatment, they suffered fron cardiac arrest")
   elif choice1b=="c1":
@@ -141,9 +153,6 @@ if choice1=="3":
   if choice1c=="a3":
     print("You find out that the patient has a previous history of anxiety.")
     choice3a=input("Either choose to (1gh) give anxiety meds to calm down the patient, or (1hg) check their vitals.")
-    '''
-    vitals path not working
-    '''
     if choice3a=="1gh":
       print("The patient collapses due to respiratory faliure and cardiovascular collapse.")
       choice2b =input("Choose to either (1g) provide the drug's anitdote to stop its effects, or (1h) provide IV for the patient.")
@@ -156,37 +165,50 @@ if choice1=="3":
         print("You saved the patient!")
       if choice2b=="1h":
         print("During a regular shock, yes, IV would help. For this patient, the heart's ventricle is already stretched by trying to push blood past a clot from pulmonary embolism. Using IV crushes the left ventricle and causes cardiac arrest.")
-  elif choice1c=="b3":
-    print("You notice one of the patient's legs are swollen.")
-    choice3b=input("Either (1i) treat the leg with ice or (1j) push a heavy dose of IV blood thinners.")
-    if choice3b=="1i":
-      print("Patient suffers from cardiovascular collapse. You failed. Rule of thumb: treat in order of airway, breathing, circultation.")
-    elif choice3b=="1j":
-      print("Vitals don't snap back to normal but they do stabilize. Patient still feels sharp pain in chest.")
-    choice4a=input("Either choose to (1k) keep monitoring patient by getting a heart ultrasound, bed rest, and checking for brain bleed or (1l) discharge the pateint since they are stable.")
-    if choice4a=="1k":
-      print("You save the patient! By monitoring them and discharging after a week, you made sure they were fully okay. Make sure to tell them to follow up with a hermatologist!")
-    if choice4a=="1l":
-      print("The patient collapses at home due to buildup from a blood clot. They enter obstructive shock.")
-      choice5a=input("Either choose to (1z) enter code blue, or (1x) scan for a chest x-ray to see exactly what's wrong.")
-      if choice5a=="1z":
-       print("You succesfully saved the patient.")
-      if choice5a=="1x":
-         print("You wasted too much time. You failed to save the patient!")
-    if choice3a=="1hg":
-      print("Vitals show blood pressure of 110/70, heart rate 125, oxygen levels of 84%.")
-      choice1a =input("Either choose to (a1) prepare an ultrasound and emergency medications, or (b1) send the patient back to the waiting room since their condition isn't bad")
-      if choice1a=="a1":
+    elif choice3a=="1hg":
+       print("Vitals show blood pressure of 110/70, heart rate 125, oxygen levels of 84%.")
+       choice1a =input("Either choose to (a1) prepare an ultrasound and emergency medications, or (b1) send the patient back to the waiting room since their condition isn't bad")
+       if choice1a=="b1":
+          print("You failed to save the patient.")
+       if choice1a=="a1":
         print("You find a strain in the heart, comfirming pulmonary embolism, but blood pressure remains normal.")
         choice2a=input("Next, choose to (c1) use blood thinner to stabilize, or (d1) wait a few minutes for vital sign changes.")
-        if choice2a=="1d":
+        if choice2a=="d1":
           print("Patient suddenly crashes and loses consciousness. Blood pressure levels drop to 70/40. To help, you grab Clot-Busters. The Clot-Busters attacks the clot, and slices through fibrin web, breaking the clottage down.")
           choice6a=input("After using the clot-busters, you can chose to (1aa) perform neuro checks since the brain could be prone to bleeding, or (1ab) discharge the patient since they seem alright and your job is done.")
           if choice6a=="1aa": 
            print("After a few days, you discharge the patient. You succesfully saved them!")
           if choice6a=="1ab": 
             print("The patient suffered from brain bleeding. You failed to save them.")
-  elif choice1a=="b1": 
-    print("You failed to save the patient! They had an underlying condition called pulmonary embolism, and without intensive treatment, they suffered fron cardiac arrest")
-
+        if choice2a=="c1":
+          print("Vitals don't snap back to normal but they do stabilize. Patient still feels sharp pain in chest.")
+          choice4a=input("Either choose to (1k) keep monitoring patient by getting a heart ultrasound, bed rest, and checking for brain bleed or (1l) discharge the pateint since they are stable.")
+          if choice4a=="1k":
+            print("You save the patient! By monitoring them and discharging after a week, you made sure they were fully okay. Make sure to tell them to follow up with a hermatologist!")
+          elif choice4a=="1l":
+            print("The patient collapses at home due to buildup from a blood clot. They enter obstructive shock.")
+            choice5a=input("Either choose to (1z) enter code blue, or (1x) scan for a chest x-ray to see exactly what's wrong.")
+            if choice5a=="1z":
+              print("You succesfully saved the patient.")
+            elif choice5a=="1x":
+              print("You wasted too much time. You failed to save the patient!")
+  elif choice1c=="b3":
+      print("You notice one of the patient's legs are swollen.")
+      choice3b=input("Either (1i) treat the leg with ice or (1j) push a heavy dose of IV blood thinners.")
+      if choice3b=="1i":
+       print("Patient suffers from cardiovascular collapse. You failed. Rule of thumb: treat in order of airway, breathing, circultation.")
+      elif choice3b=="1j":
+        print("Vitals don't snap back to normal but they do stabilize. Patient still feels sharp pain in chest.")
+        choice4a=input("Either choose to (1k) keep monitoring patient by getting a heart ultrasound, bed rest, and checking for brain bleed or (1l) discharge the pateint since they are stable.")
+        if choice4a=="1k":
+          print("You save the patient! By monitoring them and discharging after a week, you made sure they were fully okay. Make sure to tell them to follow up with a hermatologist!")
+        if choice4a=="1l":
+          print("The patient collapses at home due to buildup from a blood clot. They enter obstructive shock.")
+          choice5a=input("Either choose to (1z) enter code blue, or (1x) scan for a chest x-ray to see exactly what's wrong.")
+          if choice5a=="1z":
+            print("You succesfully saved the patient.")
+          if choice5a=="1x":
+            print("You wasted too much time. You failed to save the patient!")
+   
+    
     
