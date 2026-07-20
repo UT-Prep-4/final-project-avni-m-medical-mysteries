@@ -1,16 +1,13 @@
-# Project Title (REPLACE THIS with your project's name)
+# Medical Mysteries
 
 ## What it is
 My code simulates a medical situation, when the patient is faced under the underlying condition of pulmonary embolism. The game forces the player to act as the "doctor", and make critical thinking decisions to keep the patient alive and healthy.
 
 ## How to run it
-REPLACE THIS: exact steps. For example: "Run python final_project.py in the
-terminal, then open port 6080 to see the game window. Use the arrow keys to move."
+Click the play button at the top right corner to begin the code and run the simulation. From there input the choice you want (found in the parentheses ()), and click enter to continue the code.
 
 ## How it works
-REPLACE THIS: 2-4 sentences on the interesting part of the code. Which function
-does the magic? What was the hardest bug you fixed?
+The part of the code that runs the "magic" is the work of the if/elif loops, and input command. Because of the input, it allows the user to have their choice, and because of the if/elif loops, it can provide and react to any given decision made by the user.
 
 ## Built by
-REPLACE THIS: your name(s), and anything you used for help or inspiration
-(tutorials, art sources, your instructor, teammates).
+Avni Manjunath, and my inspiration came from my interest for researching medicine!
